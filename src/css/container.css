@@ -1,5 +1,10 @@
 .container {
-    margin: 0 auto;
-    max-width: 1000px;
-  }
-  
+  margin-left: 270px; /*временно*/
+  max-width: 1160px;
+  height: 100%;
+  background-color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 40px 60px 0 50px;
+}
+

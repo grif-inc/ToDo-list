@@ -1,7 +1,9 @@
 <template>
     <div class="main">
-        <div class="sidebar"></div>
-        <div class="page"></div>
+        <div class="container">
+            <div class="page"></div>
+        </div>
+        
     </div>
 </template>
 
@@ -16,5 +18,9 @@ export default {
         width: 100%;
         height: 100vh;
         background-color: #202D48;
+        padding-top: 10px;
+        padding-right: 8px;
+        overflow: auto;
     }
+    
 </style>
