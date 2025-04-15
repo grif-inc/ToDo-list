@@ -1,7 +1,7 @@
 <template>
  <form class="card">
     <div class="form-control">
-        <img src="../img/logo.svg" alt="">
+        <img src="../../img/logo.svg" alt="">
         <h1>To<span>Do</span> </h1>
 
         <h2 class="center">Join us</h2>
@@ -11,7 +11,7 @@
         <input type="text"placeholder="Password">
 
         <div class="flex">
-            <input type="checkbox" class="checkbox" id="conditions">
+            <input type="checkbox" id="conditions">
             <label for="conditions">I agree to the terms & conditions</label>
         </div>
         

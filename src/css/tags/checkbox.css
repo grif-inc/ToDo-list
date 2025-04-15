@@ -1,0 +1,23 @@
+input[type="checkbox"] {
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none; 
+    position: relative;
+    width: 20px; 
+    height: 20px; 
+    border: 1px solid #535353; 
+    background: transparent;
+    cursor: pointer; 
+}
+
+input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid #535353; 
+    border-width: 0 2px 2px 0; 
+    transform: rotate(45deg);
+}

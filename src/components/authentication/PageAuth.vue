@@ -1,7 +1,7 @@
 <template>
     <form class="card">
        <div class="form-control">
-           <img src="../img/logo.svg" alt="">
+           <img src="../../img/logo.svg" alt="">
            <h1>To<span>Do</span> </h1>
    
            <h2 class="center">Welcome Back</h2>
