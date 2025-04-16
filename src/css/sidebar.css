@@ -1,0 +1,18 @@
+.sidebar {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.sidebar h1 {
+    margin-bottom: 1.25rem;
+}
+
+.sidebar_item {
+    background-color: #334977;
+    padding: 8px 40px 8px 15px;
+    border-radius: 5px;
+}
+
+.sidebar_item img {
+    margin-right: 10px;
+}

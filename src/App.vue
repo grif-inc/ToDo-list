@@ -9,7 +9,7 @@ import PageMain from './components/PageMain.vue';
 
 
 export default {
-    components: { PageAuth, PageRegist, PageMain}
+    components: { PageAuth, PageRegist, PageMain }
 }
 </script>
 
