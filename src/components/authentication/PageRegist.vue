@@ -17,7 +17,7 @@
         
         <button class="btn" type="submit">Sign Up</button>
 
-        <h3>Already have an account? <router-link to="/auth">Log in</router-link></h3>
+        <h4>Already have an account? <router-link to="/auth">Log in</router-link></h4>
     </div>
     
  </form>
@@ -44,7 +44,7 @@ export default {
     h2 {
         margin-bottom: 15px;
     }
-    h3 {
+    h4 {
         text-align: center;
     }
     button {

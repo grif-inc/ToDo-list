@@ -2,7 +2,7 @@
     <div class="main flex">
         <page-sidebar></page-sidebar>
         <div class="container">
-            <div class="page"></div>
+            <page-header></page-header>
         </div>
         
     </div>

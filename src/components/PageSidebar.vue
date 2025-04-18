@@ -3,7 +3,7 @@
         <router-link to="/main"><h1>To<span>Do</span></h1></router-link>
         <div class="sidebar_item flex">
             <img src="../img/dashboard-icon.svg" alt="">
-            <h4>Dashboard</h4>
+            <h3>Dashboard</h3>
         </div>
     </div>
 </template>

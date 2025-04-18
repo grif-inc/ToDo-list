@@ -1,0 +1,12 @@
+.header {
+    color: black;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.header_item.active {
+    border-radius: 10px;
+    background: #EAEAEA;
+    padding: 0 7px;
+}

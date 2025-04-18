@@ -13,7 +13,7 @@
            
            <button class="btn" type="submit">Log in</button>
    
-           <h3>Don’t have an account? <router-link to="/regist">Sign Up</router-link></h3>
+           <h4>Don’t have an account? <router-link to="/regist">Sign Up</router-link></h4>
        </div>
        
     </form>
@@ -40,7 +40,7 @@
        h2 {
            margin-bottom: 15px;
        }
-       h3 {
+       h4 {
            text-align: center;
        }
        button {
