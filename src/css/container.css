@@ -1,6 +1,6 @@
 .container {
-  max-width: 1160px;
-  height: 100%;
+  width: 85%;
+  min-height: 100vh;
   background-color: white;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;

@@ -4,7 +4,7 @@
            <img src="../../img/logo.svg" alt="">
            <h1>To<span>Do</span> </h1>
    
-           <h2 class="center">Welcome Back</h2>
+           <h2 class="flex jc-center">Welcome Back</h2>
    
            <input type="text"placeholder="Email">
            <input type="text"placeholder="Password">
@@ -27,23 +27,23 @@
    
    <style scoped>
        img {
-           display: inline; 
-           vertical-align: middle;
-           margin-right: 32px;
-           margin-left: 38px;
+            display: inline; 
+            vertical-align: middle;
+            margin-right: 32px;
+            margin-left: 38px;
        }
        h1 {
-           display: inline; 
-           vertical-align: middle;
-           align-items: center;
+            display: inline; 
+            vertical-align: middle;
+            align-items: center;
        }
        h2 {
-           margin-bottom: 15px;
+            margin-bottom: 15px;
        }
        h4 {
-           text-align: center;
+            text-align: center;
        }
        button {
-           margin-bottom: 20px;
+            margin-bottom: 20px;
        }
    </style>

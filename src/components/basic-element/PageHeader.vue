@@ -1,9 +1,9 @@
 <template>
-    <div class="header flex center">
-        <img src="../img/header-icon.svg" alt="">
+    <nav class="header flex center">
+        <img src="../../img/header-icon.svg" alt="">
         <p>></p>
         <div class="header_item active">Dashboard</div>
-    </div>
+    </nav>
     <hr>
 </template>
 

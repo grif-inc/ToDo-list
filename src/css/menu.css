@@ -1,0 +1,16 @@
+.menu {
+    margin-bottom: 12px;
+}
+
+.menu_profile {
+    cursor: pointer;
+}
+
+.menu_profile img {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #202D48;
+    border-radius: 50px;
+    margin: 0 10px;
+}
+

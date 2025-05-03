@@ -1,0 +1,11 @@
+.search-filter input{
+    max-width: 230px;
+    border-radius: 10px;
+    border: 3px solid #C4D0EB;
+    background: #FFF;
+    padding: 6px 1rem;
+}
+
+.filter input {
+    margin-left: 10px;
+}

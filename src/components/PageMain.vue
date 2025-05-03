@@ -3,26 +3,21 @@
         <page-sidebar></page-sidebar>
         <div class="container">
             <page-header></page-header>
+            <page-menu></page-menu>
+            <page-search-filter></page-search-filter>
+            <tasks-lists></tasks-lists>
         </div>
         
     </div>
 </template>
 
-<script>
-import PageSidebar from './PageSidebar.vue';
-import PageHeader from './PageHeader.vue';
-export default {
-    components: { PageSidebar, PageHeader }
-}
+<script setup>
+import PageSidebar from './basic-element/PageSidebar.vue';
+import PageHeader from './basic-element/PageHeader.vue';
+import PageMenu from './basic-element/PageMenu.vue';
+import PageSearchFilter from './basic-element/PageSearchFilter.vue';
+import TasksLists from './task-lists/TasksLists.vue';
+
+
 </script>
 
-<style scoped>
-.main {
-    width: 100%;
-    height: 100vh;
-    background-color: #202D48;
-    padding-top: 10px;
-    padding-right: 8px;
-}
-    
-</style>

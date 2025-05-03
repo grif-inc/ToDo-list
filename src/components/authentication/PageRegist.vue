@@ -4,7 +4,7 @@
         <img src="../../img/logo.svg" alt="">
         <h1>To<span>Do</span> </h1>
 
-        <h2 class="center">Join us</h2>
+        <h2 class="flex jc-center">Join us</h2>
 
         <input type="text" placeholder="Name">
         <input type="text"placeholder="Email">

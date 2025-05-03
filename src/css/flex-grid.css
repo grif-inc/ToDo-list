@@ -4,5 +4,20 @@
 
 .flex.center {
   align-items: center;
+}
+
+.flex.jc-center {
   justify-content: center;
+}
+
+.flex.end {
+  justify-content: flex-end;
+}
+
+.flex.betw {
+  justify-content: space-between;
+}
+
+.flex.wrap {
+  flex-wrap: wrap;
 }
