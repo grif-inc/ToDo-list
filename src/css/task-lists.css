@@ -52,3 +52,42 @@
     height: 12px;
     border-radius: 50%;
 }
+
+/* Add Tasks Form */
+
+.add-tasks-form{ 
+    border-radius: 10px;
+    border: 3px solid #C4D0EB;
+    background: white;
+    padding: 16px 10px;
+    max-width: 420px;
+}
+
+.add-tasks-form textarea, .add-tasks-form input{ 
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #C4D0EB;
+    background: white;
+    margin-bottom: 7px;
+    padding: 10px 12px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #535353;
+}
+
+.add-tasks-form textarea{ 
+    resize: none;
+}
+
+.add-tasks-form .flex input:not(:last-child) {
+    margin-right: 4px;
+}
+
+.add-task {
+    padding: 10px;
+    border-radius: 10px;
+    background: #202D48; 
+    color: white;
+    font-size: 26px;
+    font-weight: 600;   
+}

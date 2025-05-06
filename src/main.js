@@ -1,6 +1,19 @@
 import { createApp } from 'vue'
 import './main.css'
-import router from './router'
+import { initializeApp } from "firebase/app"
+import router from './router/router'
+import { createPinia } from 'pinia'
 import App from './App.vue'
 
-createApp(App).use(router).mount('#app')
+const firebaseConfig = {
+  apiKey: "AIzaSyDAbHTfJcoQtOvv5zTU2Urx_7pB7iLpuWI",
+  authDomain: "todo-nmstu.firebaseapp.com",
+  projectId: "todo-nmstu",
+  storageBucket: "todo-nmstu.firebasestorage.app",
+  messagingSenderId: "472903020991",
+  appId: "1:472903020991:web:8f8b5f124e75d19753f10a"
+};
+
+initializeApp(firebaseConfig);
+
+createApp(App).use(createPinia()).use(router).mount('#app')
