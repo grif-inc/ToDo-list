@@ -4,7 +4,7 @@
 }
 
 .form-control input[type="text"],
-.form-control select {
+.form-control select, .form-control input[type="password"]{
     margin-bottom: 20px;
     outline: none;
     border-radius: 15px;
@@ -36,4 +36,31 @@
 .form-control input[type="text"]:active,
 .form-control input[type="text"]:focus {
     border: 2px solid #17A2B8;
+}
+
+
+/* password */
+
+.password-container {
+    position: relative;
+}
+
+.password-vision {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.password-vision::before {
+    content: url(../img/password-no-vis.svg);
+}
+
+.password-vision.show-password::before {
+    content: url(../img/password-vis.svg);
 }

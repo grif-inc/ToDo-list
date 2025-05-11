@@ -3,6 +3,7 @@ import './main.css'
 import { initializeApp } from "firebase/app"
 import router from './router/router'
 import { createPinia } from 'pinia'
+import PageLoader from './components/basic-element/PageLoader.vue'
 import App from './App.vue'
 
 const firebaseConfig = {
@@ -16,4 +17,9 @@ const firebaseConfig = {
 
 initializeApp(firebaseConfig);
 
-createApp(App).use(createPinia()).use(router).mount('#app')
+const app = createApp(App);
+
+app.use(createPinia());
+app.use(router);
+app.component('PageLoader', PageLoader);
+app.mount('#app')

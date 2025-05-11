@@ -2,13 +2,11 @@
   <router-view></router-view>
 </template>
 
-<script>
+<script setup>
+  import { useUserStore } from './stores/user';
 
-
-
-export default {
-    
-}
+  const userStore = useUserStore();
+  userStore.initUser();
 </script>
 
 <style scoped>
