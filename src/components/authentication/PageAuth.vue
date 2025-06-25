@@ -5,20 +5,21 @@
           <h1>To<span>Do</span> </h1>
           <h2 class="flex jc-center">{{ titleText }}</h2>
 
-          <input v-if="!isLogin" type="text" placeholder="Name" v-model="name" max="30">
-          <input type="text"placeholder="Email" v-model="email" max="30">
+          <input v-if="!isLogin" type="text" placeholder="Name" v-model="name" max="15">
+          <div v-if="isNameTooLong" style="color: red; font-size: 16px; margin-bottom: 8px;">Name must be 15 characters or less</div>
+          <input type="text" placeholder="Email" v-model="email" max="30">
           <div class="password-container">
                <input :type="showPassword ? 'text' : 'password'" placeholder="Password" v-model="password">
                <button class="password-vision" type="button" @click="togglePassword" :class="{ 'show-password' : showPassword}"></button>
           </div>
 
           <div v-if="!isLogin" class="flex">
-               <input type="checkbox" id="conditions">
+               <input type="checkbox" id="conditions" v-model="isChecked">
                <label for="conditions">I agree to the terms & conditions</label>
           </div>
 
           <hr v-if="isLogin">  
-          <button class="btn" type="submit">{{ buttonText }}</button>
+          <button class="btn" type="submit" :disabled="(!isLogin && !isChecked) || isNameTooLong">{{ buttonText }}</button>
           <h4>{{ subtitleText }} <a href="#" @click.prevent="toggleAuth">{{ linkText }}</a></h4>
        </div>       
     </form>
@@ -30,6 +31,7 @@
      import { computed, ref } from 'vue';
      import { useRouter } from 'vue-router';
      import PageLoader from '../basic-element/PageLoader.vue'
+     import { useUserStore } from '../../stores/user'
 
      const name = ref('')
      const email = ref('')
@@ -38,8 +40,13 @@
      const isLogin = ref(true)
      const isLoading = ref(false)
      const showPassword = ref(false)
+     const isChecked = ref(false)
 
      const router = useRouter()
+
+     const isNameTooLong = computed(() => {
+          return !isLogin.value && name.value.length > 15
+     })
 
      const togglePassword = () => {
           showPassword.value = !showPassword.value
@@ -50,6 +57,7 @@
           email.value = ''
           password.value = ''
           name.value = ''
+          isChecked.value = false
      })
 
      // Text
@@ -62,7 +70,7 @@
      })
 
      const subtitleText = computed(() => {
-          return isLogin.value ? 'Don’t have an account?' : 'Already have an account? '
+          return isLogin.value ? "Don't have an account?" : "Already have an account?"
      })
 
      const linkText = computed(() => {
@@ -81,6 +89,11 @@
                     displayName: name.value
                })
 
+
+               const userStore = useUserStore()
+               userStore.name = name.value
+               userStore.email = email.value
+               userStore.uid = user.uid
 
                router.push('/main')
           } catch(e) {
@@ -107,6 +120,7 @@
                signIn()
           }
           else {
+               if (!isChecked.value) return;
                signUp()
           }
      }

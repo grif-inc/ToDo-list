@@ -4,11 +4,13 @@
         <div class="list_inner">
             <button v-if="AddNew" @click="AddNew = false" class="flex center add-btn"><img src="../../img/add-icon.svg" alt="">Add New</button>
             <add-tasks-form v-else></add-tasks-form>
+            <tasks-form></tasks-form>
         </div>
     </div>
 </template>
 
 <script setup>
+    import TasksForm from './TasksForm.vue';
     import { ref } from 'vue';
     import AddTasksForm from './AddTasksForm.vue';
 

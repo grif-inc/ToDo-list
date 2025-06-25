@@ -2,7 +2,7 @@
     <form class="flex info" @submit.prevent="UpdateProfile">
         <div class="info_item flex center">
             <h3>Name</h3>
-            <input type="text" v-model="name" maxlength="25">
+            <input type="text" v-model="name" maxlength="15">
         </div>
         <div class="info_item flex center">
             <h3>Email</h3>
